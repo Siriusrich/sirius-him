@@ -5,6 +5,9 @@ backend:
   name: github
   repo: Siriusrich/sirius-him
   branch: main
+  # Request only public-repo access (least privilege). This matches the public
+  # repo, so the CMS login never asks for access to your private repositories.
+  auth_scope: public_repo
 
 # Try the editor locally (no login) via:  npx decap-server
 # On the live site this is ignored and GitHub sign-in is used.
