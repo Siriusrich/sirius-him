@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+artifacts/
+apt/
+local-libs/
+font-cache/
+test-env/
+*.tgz
+
+# Local secrets — never commit
+.env
+.env.*
+
+# Freebuff generated configs
+freebuff.wrangler.jsonc

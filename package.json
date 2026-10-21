@@ -1,0 +1,21 @@
+{
+  "name": "sirius-him-site",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Official website for Sirius HIM — melodic dancehall & R&B artist from Runaway Bay, Jamaica.",
+  "scripts": {
+    "content": "node scripts/build-content.mjs",
+    "content:dev": "node scripts/build-content.mjs --dev",
+    "dev": "node scripts/content-watch.mjs",
+    "build": "npm run content && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fontsource/instrument-serif": "^5.2.6"
+  },
+  "devDependencies": {
+    "playwright": "^1.64.1",
+    "vite": "^7.1.9"
+  }
+}

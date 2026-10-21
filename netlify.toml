@@ -1,0 +1,9 @@
+# Netlify configuration — nothing to change here.
+# When you connect this repo in Netlify, build command and publish
+# directory are read from this file automatically.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"

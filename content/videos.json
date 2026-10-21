@@ -1,0 +1,29 @@
+{
+  "_note": "VIDEOS. Paste the YouTube ID (the part after \"v=\" in a watch URL, or the last path segment of a Shorts URL) into \"youtubeId\". Once an ID is set the card becomes a real, privacy-enhanced (youtube-nocookie) embed for music videos, or a linked vertical thumbnail card for shorts. Empty ID = 'coming soon' card.",
+  "videos": [
+    {
+      "id": "video-01",
+      "youtubeId": "",
+      "title": "Official video — title pending",
+      "description": "[Add a line about this video.]"
+    },
+    {
+      "id": "video-02",
+      "youtubeId": "",
+      "title": "Visualizer — title pending",
+      "description": "[Add a line about this video.]"
+    }
+  ],
+  "shorts": [
+    {
+      "id": "short-01",
+      "youtubeId": "",
+      "title": "Short-form clip — title pending"
+    },
+    {
+      "id": "short-02",
+      "youtubeId": "",
+      "title": "Short-form clip — title pending"
+    }
+  ]
+}

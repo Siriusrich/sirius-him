@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000" role="img" aria-label="Abstract sunset cover artwork placeholder">
+  <defs>
+    <linearGradient id="sky1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#12101a"/>
+      <stop offset="0.55" stop-color="#2a1620"/>
+      <stop offset="1" stop-color="#3d1a1c"/>
+    </linearGradient>
+    <radialGradient id="sun1" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd07a"/>
+      <stop offset="0.45" stop-color="#f4713a"/>
+      <stop offset="1" stop-color="#c74a2b"/>
+    </radialGradient>
+    <linearGradient id="sea1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d0c12"/>
+      <stop offset="1" stop-color="#0a0a0c"/>
+    </linearGradient>
+    <filter id="grain1" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 0.9  0 0 0 0 0.8  0 0 0 0.35 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect width="1000" height="1000" fill="url(#sky1)"/>
+  <circle cx="500" cy="700" r="270" fill="url(#sun1)" opacity="0.95"/>
+  <circle cx="500" cy="700" r="360" fill="#f4713a" opacity="0.14"/>
+  <circle cx="500" cy="700" r="470" fill="#f4713a" opacity="0.07"/>
+  <rect y="700" width="1000" height="300" fill="url(#sea1)"/>
+  <g stroke="#f2b33d" stroke-width="2" opacity="0.35">
+    <line x1="150" y1="742" x2="850" y2="742"/>
+    <line x1="230" y1="780" x2="770" y2="780"/>
+    <line x1="310" y1="824" x2="690" y2="824"/>
+    <line x1="380" y1="874" x2="620" y2="874"/>
+  </g>
+  <rect width="1000" height="1000" filter="url(#grain1)" opacity="0.5"/>
+</svg>

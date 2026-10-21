@@ -1,0 +1,16 @@
+{
+  "title": "Second release — title pending",
+  "order": 2,
+  "featured": false,
+  "placeholder": true,
+  "releaseType": "Single",
+  "releaseDate": "",
+  "artwork": "assets/img/cover-02.svg",
+  "artworkAlt": "Cover artwork placeholder for an upcoming Sirius HIM release",
+  "description": "[Write one or two lines about this release.]",
+  "links": [
+    { "service": "Spotify", "url": "" },
+    { "service": "Apple Music", "url": "" },
+    { "service": "YouTube Music", "url": "" }
+  ]
+}

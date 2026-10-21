@@ -1,0 +1,116 @@
+# Decap CMS configuration — maps the /admin editor forms to the content files.
+# Backend repo is Siriusrich/sirius-him (branch main).
+
+backend:
+  name: github
+  repo: Siriusrich/sirius-him
+  branch: main
+
+# Try the editor locally (no login) via:  npx decap-server
+# On the live site this is ignored and GitHub sign-in is used.
+local_backend: true
+
+media_folder: "src/assets/img" # artwork is stored here in the repo
+public_folder: "assets/img" # and referenced like this in content
+
+collections:
+  - name: site
+    label: "Site & social links"
+    files:
+      - name: settings
+        label: "Artist info, contact & socials"
+        file: "content/site.json"
+        format: json
+        fields:
+          - { label: "Artist name", name: artistName, widget: string }
+          - { label: "Website address", name: siteUrl, widget: string, hint: "Your real domain, e.g. https://siriushim.com" }
+          - { label: "Location", name: location, widget: string }
+          - { label: "Tagline", name: tagline, widget: string }
+          - label: "Genres"
+            name: genres
+            widget: list
+            field: { label: "Genre", name: genre, widget: string }
+          - { label: "Short bio (Home page intro)", name: bioShort, widget: text }
+          - { label: "Contact email", name: contactEmail, widget: string, required: false, hint: "Used by the contact form on the Connect page" }
+          - label: "Social profiles"
+            name: socials
+            widget: list
+            fields:
+              - { label: "Name (e.g. Instagram)", name: label, widget: string }
+              - { label: "Profile URL", name: url, widget: string, required: false, hint: "Leave empty to show 'coming soon'" }
+          - { label: "Share image path", name: ogImage, widget: string, required: false, hint: "Image used when the site is shared on social media" }
+
+  - name: about
+    label: "About page (biography)"
+    files:
+      - name: about
+        label: "Biography & facts"
+        file: "content/about.json"
+        format: json
+        fields:
+          - { label: "Intro line", name: lede, widget: string }
+          - { label: "Portrait image", name: portrait, widget: image }
+          - { label: "Portrait alt text", name: portraitAlt, widget: string, required: false }
+          - label: "Story paragraphs"
+            name: paragraphs
+            widget: list
+            field: { label: "Paragraph", name: paragraph, widget: text }
+          - label: "Pull quote"
+            name: pullQuote
+            widget: object
+            fields:
+              - { label: "Quote", name: text, widget: string }
+              - { label: "Attribution", name: cite, widget: string, required: false }
+          - label: "Quick facts"
+            name: facts
+            widget: list
+            fields:
+              - { label: "Label (e.g. Origin)", name: label, widget: string }
+              - { label: "Value", name: value, widget: string }
+
+  - name: releases
+    label: "Releases"
+    folder: "content/releases"
+    create: true
+    extension: json
+    format: json
+    identifier_field: title
+    summary: "{{title}} — {{releaseType}}"
+    fields:
+      - { label: "Title", name: title, widget: string }
+      - { label: "Display order", name: order, widget: number, value_type: int, hint: "Lower numbers appear first" }
+      - { label: "Feature on Home page", name: featured, widget: boolean, default: false }
+      - { label: "Show 'Coming soon' badge", name: placeholder, widget: boolean, default: true }
+      - { label: "Type", name: releaseType, widget: select, options: ["Single", "EP", "Album", "Mixtape", "Other"], default: "Single" }
+      - { label: "Release date", name: releaseDate, widget: date, required: false, format: "YYYY-MM-DD", hint: "Leave empty to hide" }
+      - { label: "Cover artwork", name: artwork, widget: image }
+      - { label: "Cover artwork alt text", name: artworkAlt, widget: string, required: false }
+      - { label: "Description", name: description, widget: text }
+      - label: "Streaming links"
+        name: links
+        widget: list
+        fields:
+          - { label: "Service (e.g. Spotify)", name: service, widget: string }
+          - { label: "URL", name: url, widget: string, required: false, hint: "Leave empty to show 'coming soon'" }
+
+  - name: videos
+    label: "Videos"
+    files:
+      - name: videos
+        label: "Music videos & shorts"
+        file: "content/videos.json"
+        format: json
+        fields:
+          - label: "Music videos (16:9 embeds)"
+            name: videos
+            widget: list
+            fields:
+              - { label: "YouTube ID", name: youtubeId, widget: string, required: false, hint: "The part after v= in the watch URL" }
+              - { label: "Title", name: title, widget: string }
+              - { label: "Description", name: description, widget: text, required: false }
+          - label: "Shorts (vertical links)"
+            name: shorts
+            widget: list
+            fields:
+              - { label: "YouTube ID", name: youtubeId, widget: string, required: false, hint: "The last part of a Shorts URL" }
+              - { label: "Title", name: title, widget: string }

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000" role="img" aria-label="Abstract sun halo cover artwork placeholder">
+  <defs>
+    <radialGradient id="core3" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#1a1016"/>
+      <stop offset="0.62" stop-color="#1a1016"/>
+      <stop offset="0.72" stop-color="#f4713a"/>
+      <stop offset="0.78" stop-color="#1a1016"/>
+      <stop offset="1" stop-color="#1a1016"/>
+    </radialGradient>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0a0c"/>
+      <stop offset="1" stop-color="#171019"/>
+    </linearGradient>
+    <filter id="grain3" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 0.9  0 0 0 0 0.8  0 0 0 0.3 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect width="1000" height="1000" fill="url(#bg3)"/>
+  <circle cx="500" cy="500" r="360" fill="url(#core3)"/>
+  <g fill="none" stroke-linecap="round">
+    <circle cx="500" cy="500" r="430" stroke="#f4713a" stroke-width="2" opacity="0.55"/>
+    <circle cx="500" cy="500" r="470" stroke="#f2b33d" stroke-width="1" opacity="0.35"/>
+    <path d="M500 40 a460 460 0 0 1 460 460" stroke="#f2b33d" stroke-width="6" opacity="0.8"/>
+    <path d="M500 960 a460 460 0 0 1 -460 -460" stroke="#f4713a" stroke-width="6" opacity="0.8"/>
+  </g>
+  <circle cx="500" cy="500" r="18" fill="#f2b33d"/>
+  <rect width="1000" height="1000" filter="url(#grain3)" opacity="0.5"/>
+</svg>

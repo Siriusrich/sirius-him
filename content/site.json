@@ -1,0 +1,21 @@
+{
+  "_note": "EDIT THIS FILE FIRST. siteUrl must be your real domain before launch (used for SEO canonical tags, Open Graph and the sitemap). Keys starting with _ are notes and are ignored by the site build. Leave any url/handle empty ('') and the site shows a tasteful 'coming soon' state instead of a broken link.",
+  "artistName": "Sirius HIM",
+  "siteUrl": "https://example.com",
+  "location": "Runaway Bay, Jamaica",
+  "tagline": "Melodic dancehall & R&B — Jamaican roots, international sound.",
+  "genres": ["Dancehall", "R&B", "Melodic"],
+  "bioShort": "Sirius HIM is an independent melodic dancehall and R&B artist from Runaway Bay, Jamaica — carrying the rhythm of the north coast into a sound built for everywhere. Smooth melodies, honest bars, and a voice that moves between the islands and the world.",
+  "contactEmail": "",
+  "_note_contactEmail": "Add your booking / general email, e.g. \"bookings@siriushim.com\". While it is empty the Connect page form explains that contact is not yet open instead of silently failing.",
+  "ogImage": "/og.svg",
+  "_note_ogImage": "Placeholder. Before launch, replace src/public/og.svg with a 1200x628 PNG named og.png and set this to \"/og.png\".",
+  "socials": [
+    { "id": "instagram", "label": "Instagram", "url": "" },
+    { "id": "tiktok", "label": "TikTok", "url": "" },
+    { "id": "youtube", "label": "YouTube", "url": "" },
+    { "id": "x", "label": "X", "url": "" },
+    { "id": "spotify", "label": "Spotify", "url": "" }
+  ],
+  "_note_socials": "Paste the full profile URL, e.g. \"https://instagram.com/yourhandle\". Empty url = the button shows 'coming soon' and does not link anywhere."
+}

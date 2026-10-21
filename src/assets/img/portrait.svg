@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-label="Portrait placeholder for Sirius HIM">
+  <defs>
+    <linearGradient id="pbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#171220"/>
+      <stop offset="0.55" stop-color="#241421"/>
+      <stop offset="1" stop-color="#0a0a0c"/>
+    </linearGradient>
+    <radialGradient id="plight" cx="0.72" cy="0.3" r="0.75">
+      <stop offset="0" stop-color="#f4713a" stop-opacity="0.55"/>
+      <stop offset="0.45" stop-color="#c74a2b" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#0a0a0c" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="pgrain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 0.9  0 0 0 0 0.8  0 0 0 0.3 0"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect width="900" height="1200" fill="url(#pbg)"/>
+  <rect width="900" height="1200" fill="url(#plight)"/>
+  <circle cx="648" cy="360" r="210" fill="none" stroke="#f2b33d" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="648" cy="360" r="270" fill="none" stroke="#f4713a" stroke-width="1" opacity="0.3"/>
+  <circle cx="648" cy="360" r="52" fill="#f2b33d" opacity="0.75"/>
+  <path d="M0 980 L900 860 L900 1200 L0 1200 Z" fill="#0a0a0c" opacity="0.75"/>
+  <rect width="900" height="1200" filter="url(#pgrain)" opacity="0.55"/>
+</svg>

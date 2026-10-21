@@ -1,0 +1,32 @@
+{
+  "lede": "Rooted in Runaway Bay. Restless by design.",
+  "portrait": "assets/img/portrait.svg",
+  "portraitAlt": "Sirius HIM",
+  "paragraphs": [
+    "Sirius HIM comes from Runaway Bay — a stretch of Jamaica's north coast where the sea sits close, the sound systems carry down the road, and music is less a career choice than a way of life. Growing up inside that, you learn early that rhythm is language: a conversation passed between generations, between neighborhoods, between people who have never met.",
+    "That foundation is where the sound begins. Dancehall taught pace and confidence — the art of saying everything in few words, on top of a riddim that refuses to sit still. R&B taught patience — melody, breath, the space between notes where feeling lives. Sirius HIM built a style in the gap between the two: melodic, warm, direct, and unmistakably Jamaican.",
+    "Independent by choice, the ambition is simple and serious: carry the Runaway Bay sound further than it has ever gone, without sanding down where it came from. International reach, island centre. Every record is a step on that road."
+  ],
+  "pullQuote": {
+    "text": "[Add a favourite line, lyric or quote from Sirius HIM here]",
+    "cite": "placeholder — replace with the real attribution"
+  },
+  "facts": [
+    {
+      "label": "Origin",
+      "value": "Runaway Bay, Jamaica"
+    },
+    {
+      "label": "Sound",
+      "value": "Melodic dancehall & R&B"
+    },
+    {
+      "label": "Path",
+      "value": "Independent artist"
+    },
+    {
+      "label": "Direction",
+      "value": "Jamaican roots, international appeal"
+    }
+  ]
+}
