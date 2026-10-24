@@ -1,0 +1,19 @@
+{
+  "featured": true,
+  "placeholder": false,
+  "releaseType": "Single",
+  "title": "Rule and Conquer ",
+  "artwork": "assets/img/1000027505.png",
+  "links": [
+    {
+      "url": "https://open.spotify.com/track/40PCkQnuXe9ePjB2AfXzAp?si=3xRc3yqFTs-WZbh8Qp9GmQ&utm_source=copy-link",
+      "service": "Spotify"
+    },
+    {
+      "url": "https://music.youtube.com/watch?v=toiLaRXLtBs&si=dz8VXe6SwRkOzmF6",
+      "service": "YouTube Music"
+    }
+  ],
+  "order": 1,
+  "description": "A song about establishing one's self in a competitive world. Rule and conquer is inspired in a sense by Game Of Thrones. There are a lot of GOT references in this one!!"
+}
