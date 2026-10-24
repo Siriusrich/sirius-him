@@ -1,18 +1,33 @@
 {
-  "title": "First release — title pending",
-  "order": 1,
-  "featured": true,
-  "placeholder": true,
   "releaseType": "Single",
+  "featured": true,
+  "order": 2,
+  "placeholder": false,
+  "artwork": "assets/img/1000027506.png",
   "releaseDate": "",
-  "artwork": "assets/img/cover-01.svg",
-  "artworkAlt": "Cover artwork placeholder for an upcoming Sirius HIM release",
-  "description": "[Write one or two lines about this release — the story, the mood, the sound.]",
+  "artworkAlt": "",
+  "title": "Switch",
   "links": [
-    { "service": "Spotify", "url": "" },
-    { "service": "Apple Music", "url": "" },
-    { "service": "YouTube Music", "url": "" },
-    { "service": "SoundCloud", "url": "" },
-    { "service": "Tidal", "url": "" }
-  ]
+    {
+      "service": "Spotify",
+      "url": "https://open.spotify.com/track/0RTi3EeGnSDkoRwVMmQ3Vp?si=1gLPS7UhTBKwnHL1WM6LVA&utm_source=copy-link"
+    },
+    {
+      "service": "Apple Music",
+      "url": ""
+    },
+    {
+      "service": "YouTube Music",
+      "url": "https://music.youtube.com/watch?v=tRhIQuhVKX0&si=I6NdqjIuAAfBpRyr"
+    },
+    {
+      "service": "SoundCloud",
+      "url": ""
+    },
+    {
+      "service": "Tidal",
+      "url": ""
+    }
+  ],
+  "description": "Gritty raw streat vibe originally recorded as a reference track, it was still released with that raw unedited street crunch 👌."
 }
