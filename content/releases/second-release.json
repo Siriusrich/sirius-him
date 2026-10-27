@@ -1,16 +1,25 @@
 {
-  "title": "Second release — title pending",
-  "order": 2,
-  "featured": false,
-  "placeholder": true,
   "releaseType": "Single",
+  "featured": false,
+  "order": 2,
+  "placeholder": true,
+  "artwork": "assets/img/1000027081.png",
   "releaseDate": "",
-  "artwork": "assets/img/cover-02.svg",
   "artworkAlt": "Cover artwork placeholder for an upcoming Sirius HIM release",
-  "description": "[Write one or two lines about this release.]",
+  "title": "My Life",
   "links": [
-    { "service": "Spotify", "url": "" },
-    { "service": "Apple Music", "url": "" },
-    { "service": "YouTube Music", "url": "" }
-  ]
+    {
+      "service": "Spotify",
+      "url": ""
+    },
+    {
+      "service": "Apple Music",
+      "url": ""
+    },
+    {
+      "service": "YouTube Music",
+      "url": ""
+    }
+  ],
+  "description": "A song about the hips and downs we all face..."
 }
