@@ -1,16 +1,25 @@
 {
-  "title": "Project — title pending",
-  "order": 3,
-  "featured": false,
-  "placeholder": true,
   "releaseType": "EP",
+  "featured": true,
+  "order": 3,
+  "placeholder": true,
+  "artwork": "assets/img/1000029338.png",
   "releaseDate": "",
-  "artwork": "assets/img/cover-03.svg",
-  "artworkAlt": "Cover artwork placeholder for an upcoming Sirius HIM project",
-  "description": "[Write one or two lines about this project.]",
+  "artworkAlt": "",
+  "title": "Ascendancy",
   "links": [
-    { "service": "Spotify", "url": "" },
-    { "service": "Apple Music", "url": "" },
-    { "service": "YouTube Music", "url": "" }
-  ]
+    {
+      "service": "Spotify",
+      "url": ""
+    },
+    {
+      "service": "Apple Music",
+      "url": ""
+    },
+    {
+      "service": "YouTube Music",
+      "url": ""
+    }
+  ],
+  "description": "First ep loading..."
 }
